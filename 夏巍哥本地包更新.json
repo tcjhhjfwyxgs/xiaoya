@@ -1,0 +1,21 @@
+{
+  "sites":
+    [
+      {
+        "key": "應用商店",
+      "name": "夏巍哥哥本地包推送",
+      "type": 3,"style":{"type":"rect","ratio":1.75},
+      "api": "csp_Market",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": [
+      { "name": "推薦更新",
+      "list": [
+      {
+        "name": "香雅情本地包",
+        "url": "https://ghproxy.net/https://raw.githubusercontent.com/tcjhhjfwyxgs/xiaoya/main/XYQTVBOX.zip",
+        "icon": "https://i.imgs.ovh/2023/10/20/2IO0D.jpeg",
+        "version": "随缘更新",
+        "copy":"clan://Download/XYQTVBOX/XYQTVBox/XYQTVbox.json"
+        }]}]}],
+     "spider":"https://fongmi.cachefly.net/FongMi/CatVodSpider/main/jar/custom_spider.jar;md5;eea22614c071a32c3624ca99691f491a"}
