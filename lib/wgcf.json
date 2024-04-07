@@ -1,0 +1,277 @@
+{
+	"log": {
+		"loglevel": "warn"
+	},
+	"dns": {
+		"disableFallbackIfMatch": true,
+		"hosts": {},
+		"queryStrategy": "UseIPv4",
+		"servers": [
+			{
+				"address": "tcp://1.1.1.1",
+				"concurrency": true
+			},
+			{
+				"address": "https+local://223.5.5.5/dns-query",
+				"concurrency": true,
+				"domains": [
+					"full:cdn-all.xn--b6gac.eu.org"
+				],
+				"skipFallback": true
+			}
+		]
+	},
+	"outbounds": [
+		{
+			"settings": {
+				"secretKey": "mCOHkrcZy2yOsgDpii1TzeTUAzPMmRvyKnSWlwG2V3Y=",
+				"mtu": 1400,
+				"peers": [
+					{
+						"publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+						"endpoint" : "162.159.192.35:2408"
+					}
+				],
+				"address": [
+					"172.16.0.2/32",
+					"2606:4700:110:893c:845c:536b:5565:8106/128"
+				],
+				"kernelMode": false
+			},
+			"protocol": "wireguard",
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"tag":"directwarp"
+		},
+		{
+			"settings": {
+				"secretKey": "mIldHyCXoz0+tkTpbaJYxMu2XXe+yiWF7PVx5HuFgW4=",
+				"mtu": 1280,
+				"peers": [
+					{
+						"publicKey": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+						"endpoint" : "162.159.195.65:2408"
+					}
+				],
+				"address": [
+					"172.16.0.2/32",
+					"2606:4700:110:893c:845c:536b:5565:8106/128"
+				],
+				"kernelMode": false
+			},
+			"protocol": "wireguard",
+			"streamSettings": {
+				"network": "tcp"
+			},
+			"tag":"warpoverwarp",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			}
+		},
+		{
+			"protocol": "vless",
+			"settings": {
+				"vnext": [
+					{
+						"address": "www.pcmag.com",
+						"port": 443,
+						"users": [
+							{
+								"id": "864a3ea3-f153-4beb-84fd-a9069bfa413e",
+								"encryption": "none",
+								"level":0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "liangzi.xyf.dns-dynamic.net",
+					"allowInsecure": true
+				},
+				"wsSettings": {
+					"headers": {
+						"Host": "liangzi.xyf.dns-dynamic.net"
+					},
+					"path": "/?ed=2048"
+				}
+			},
+			"tag":"vlesscf"
+		},
+		{
+			"protocol": "vless",
+			"settings": {
+				"vnext": [
+					{
+						"address": "www.whatsmyip.com",
+						"port": 443,
+						"users": [
+							{
+								"id": "864a3ea3-f153-4beb-84fd-a9069bfa413e",
+								"encryption": "none",
+								"level":0
+							}
+						]
+					}
+				]
+			},
+			"streamSettings": {
+				"network": "ws",
+				"security": "tls",
+				"tlsSettings": {
+					"serverName": "liangzi.xyf.dns-dynamic.net",
+					"allowInsecure": true
+				},
+				"wsSettings": {
+					"headers": {
+						"Host": "liangzi.xyf.dns-dynamic.net"
+					},
+					"path": "/?ed=2048"
+				}
+			},
+			"tag":"vlesscfoverwarp",
+			"proxySettings": {
+				"tag": "directwarp",
+				"transportLayer": true
+			}
+		}
+	]
+	,
+	"inbounds":[ 
+		{
+			"listen": "0.0.0.0",
+			"port": 10070,
+			"protocol": "http",
+			"settings": {
+				"allowTransparent": true
+			},
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			},
+			"tag": "http"
+		},
+		{
+			"port": 10071,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 10072,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5overvless",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 10073,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5overwarpoverwarp",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		},
+		{
+			"port": 10074,
+			"protocol": "socks",
+			"settings": {
+				"udp": true,
+				"auth": "noauth"
+			},
+			"tag":"socks5overvlessoverwarp",
+			"sniffing": {
+				"destOverride": [
+					"http",
+					"tls",
+					"quic"
+				],
+				"enabled": true,
+				"routeOnly": true
+			}
+		}
+	],
+	"routing": {
+		"domainStrategy": "IPIfNonMatch",
+		"rules": [
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5"
+				],
+				"outboundTag": "directwarp"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5overvless"
+				],
+				"outboundTag": "vlesscf"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"http"
+				],
+				"outboundTag": "vlesscf"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5overwarpoverwarp"
+				],
+				"outboundTag": "warpoverwarp"
+			},
+			{
+				"type": "field",
+				"inboundTag": [
+					"socks5overvlessoverwarp"
+				],
+				"outboundTag": "vlesscfoverwarp"
+			}
+		]
+	}
+}
