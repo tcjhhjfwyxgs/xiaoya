@@ -1,0 +1,28 @@
+民视,http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
+凤凰资讯,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://m.youtube.com/watch?v=HFib76ySpbU&pp=ygUM6bOz5Yew6KGb6KaW
+All Me & Mickey Vlogs,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/0L6EvgWotfI?si=4sX-cc72UVhd-DLw
+Nursery Rhymes with Baby Taku & Friends,
+http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/dJFDLTXViuQ?si=xt6gYixG4_MWerFe
+Cartoon Network,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/cOLQACygN5A?si=bGCpRo33pDm2eVow
+
+Phineas and Ferb Season 1,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/Fjp2TdlTTIU?si=18ABOBDCkxISDQOz
+
+The Adventures of Munki & Trunk,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/a5xRHBc289c?si=8BaZIFtPylsnATjV
+
+Bluey Full Episodes,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/x7I9aLJ4hKo?si=MjIGh_LZlGWsD_z6
+Mickey Mouse Clubhouse,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/Dkkp4KfdGPY?si=UmkoqOKWPHB4vkbF
+London Bridge is Falling Down,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/-VBxijFm50Y?si=F24ypmF1oUD-XYsz
+Cartoon Network Asia,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/hvoGGzSxDb0?si=jwDQYtFjA2oD8WW7
+
+Avatar,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/ATsiFIlyrbk?si=roSopmGUm4FISsIY
+
+SuperKitties,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/LyMZd7Kqc_M?si=nTQDoTS4y820NRne
+ All Minnie's Bow-Toons,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/OjlaUkllTss?si=5WyAqYnQ6CVljuXY
+ PBS KIDS,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/E3NOvf9WNAQ?si=aWiSAOuSw3mcp0rG
+ Disney Junior Music & Songs,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/3Z-te47b2z4?si=VQj7_12_IltxC6V_
+ LIVE SUNNY BUNNIES TV,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/dZnOHkTeJm4?si=reDWWJVQJ7N45szc
+ Peppa Pig's Clubhouse - LIVE,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/1WtQqt4fmdE?si=2V3Y72k7Gp0kJCgh
+ Livestream for Kids cartoon,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/LTXhyCUImWU?si=lP7K68kB825-NWSg
+ 凤凰资讯,http://www.lebaobei.top:6868/udp/239.255.30.70:8231
+凤凰卫视,http://www.lebaobei.top:6868/udp/239.255.30.50:8231
+凤凰香港,http://www.lebaobei.top:6868/udp/239.255.30.123:8231
