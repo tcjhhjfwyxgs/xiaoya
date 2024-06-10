@@ -1,28 +1,55 @@
-民视,http://38.64.72.148:80/hls/modn/list/4012/chunklist1.m3u8
-凤凰资讯,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://m.youtube.com/watch?v=HFib76ySpbU&pp=ygUM6bOz5Yew6KGb6KaW
-All Me & Mickey Vlogs,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/0L6EvgWotfI?si=4sX-cc72UVhd-DLw
-Nursery Rhymes with Baby Taku & Friends,
-http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/dJFDLTXViuQ?si=xt6gYixG4_MWerFe
-Cartoon Network,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/cOLQACygN5A?si=bGCpRo33pDm2eVow
+🍅YouTube港台新闻,#genre#
 
-Phineas and Ferb Season 1,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/Fjp2TdlTTIU?si=18ABOBDCkxISDQOz
+中天新聞,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/oIgbl7t0S_w?si=0d4fWFTIE2s-q7GJ
+中天新闻,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/oIgbl7t0S_w?si=TeuhRh08zA277R3K
+中天新闻1台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=oIgbl7t0S_w
+中天新闻2台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=WPfPjbOLNfE
+中視新聞LIVE,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/TCnaIE_SAtM?si=RxTJF3bb2xbQGbfc
+中视新闻Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=TCnaIE_SAtM
 
-The Adventures of Munki & Trunk,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/a5xRHBc289c?si=8BaZIFtPylsnATjV
+TVBS NEWS,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/m_dhMSvUCIc?si=Hvw2t_kFloB6iT23
+TVBS NEWS,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/m_dhMSvUCIc?si=2jFpDXaTQvVlVAr4
+TVBS新聞Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=2mCSYvcfhtc
+TVBS新聞Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=2mCSYvcfhtcK
+TVBS56Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=YvdcZ_jpLXE
 
-Bluey Full Episodes,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/x7I9aLJ4hKo?si=MjIGh_LZlGWsD_z6
-Mickey Mouse Clubhouse,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/Dkkp4KfdGPY?si=UmkoqOKWPHB4vkbF
-London Bridge is Falling Down,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/-VBxijFm50Y?si=F24ypmF1oUD-XYsz
-Cartoon Network Asia,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/hvoGGzSxDb0?si=jwDQYtFjA2oD8WW7
-
-Avatar,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/ATsiFIlyrbk?si=roSopmGUm4FISsIY
-
-SuperKitties,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/LyMZd7Kqc_M?si=nTQDoTS4y820NRne
- All Minnie's Bow-Toons,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/OjlaUkllTss?si=5WyAqYnQ6CVljuXY
- PBS KIDS,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/E3NOvf9WNAQ?si=aWiSAOuSw3mcp0rG
- Disney Junior Music & Songs,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/3Z-te47b2z4?si=VQj7_12_IltxC6V_
- LIVE SUNNY BUNNIES TV,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/dZnOHkTeJm4?si=reDWWJVQJ7N45szc
- Peppa Pig's Clubhouse - LIVE,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/1WtQqt4fmdE?si=2V3Y72k7Gp0kJCgh
- Livestream for Kids cartoon,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:2080&url=https://www.youtube.com/live/LTXhyCUImWU?si=lP7K68kB825-NWSg
- 凤凰资讯,http://www.lebaobei.top:6868/udp/239.255.30.70:8231
-凤凰卫视,http://www.lebaobei.top:6868/udp/239.255.30.50:8231
-凤凰香港,http://www.lebaobei.top:6868/udp/239.255.30.123:8231
+TVBS NEWS LIVEⓎ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=m_dhMSvUCIc
+東森新聞 ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/2dfAzcDf8Zg?si=hj4b_mA8H6fzUnoH
+EBC 東森新聞,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/E0zhe2gkXBs?si=eHatGLduDgWi9hre
+東森財經新聞,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/WHEPzbFA3hw?si=Ywi7AKnBF0_56SlB
+东森新闻Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/2dfAzcDf8Zg?si=yBX5r65qT1q-UnFG
+东森liveⓎ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/E0zhe2gkXBs?si=Qf-2QUAhwoHdB0wx
+三立新聞,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/oZdzzvxTfUY?si=bG6Z3IcLILUrFQtK
+三立iNEWS,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/CKjSm5ZeehE?si=pgI7Eay2G7kgS3NS
+三立LiveⓎ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=FoBfXvlOR6I
+華視新聞,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=wM0g8EoUZ_E
+三立新闻台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=uZ9KecuS0RA
+三立新闻台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=CKjSm5ZeehE
+公視新聞 PTS News,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/quwqlazU-c8?si=u0DeCJDMSMqWqfwf
+公视直播,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/quwqlazU-c8?si=5j97ZVGo8iHk2z49
+中視新聞LIVE,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/TCnaIE_SAtM?si=RxTJF3bb2xbQGbfc
+鏡新聞,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/5n0y6b0Q25o?si=r1k32GB8tdhWmwoZ
+鏡新闻Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/5n0y6b0Q25o
+台視新聞台HD,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/xL0ch83RAK8?si=GG5wrW4yKCzI9Z66
+台视新闻台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=xL0ch83RAK8
+台视新闻,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/xL0ch83RAK8?si=3eA0RYUDOPSNqjEo
+台视新闻台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/xL0ch83RAK8?si=6PbDs2DOrlT9Og14
+民視新聞 FTV,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/ylYJSBUgaMA?si=T60kZDB1sL-qWIVJ
+民视新闻台Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/ylYJSBUgaMA
+民视新闻,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/ylYJSBUgaMA?si=42Jkf6l8drSvO1P-
+寰宇新聞台,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/6IquAgfvYmc?si=hxZYVAJd2ue3FEId
+寰宇新闻Ⓨ,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/live/6IquAgfvYmc?si=pOtAi2jJyFbMjUNk
+东京新宿,http://127.0.0.1:9978/proxy?do=yt&proxy=socks5://127.0.0.1:10072&url=https://www.youtube.com/watch?v=DjdUEyjx8GM
+凤凰中文,http://8.137.59.151:99/haioujk041/haiousmtjk666.php?id=01
+凤凰资讯,http://play-flive.ifeng.com/live/06OLEEWQKN4.m3u8
+民視HD,http://59.126.131.114:8686/udp/230.1.2.226:11111
+人間衛視,HDhttp://59.126.131.114:8686/udp/230.1.2.193:11111
+台視HD,http://59.126.131.114:8686/udp/230.1.2.227:11111
+中視HD,http://59.126.131.114:8686/udp/230.1.2.228:11111
+華視HD,http://59.126.131.114:8686/udp/230.1.2.229:11111
+公視HD,http://59.126.131.114:8686/udp/230.1.2.230:11111
+公視台語台,http://59.126.131.114:8686/udp/230.1.2.31:11111
+好消息HD,http://59.126.131.114:8686/udp/230.1.2.151:11111
+原住民族電視,http://59.126.131.114:8686/udp/230.1.2.235:11111
+公視3台,http://59.126.131.114:8686/udp/230.1.2.62:11111
+大愛二台,http://59.126.131.114:8686/udp/230.1.2.199:11111
