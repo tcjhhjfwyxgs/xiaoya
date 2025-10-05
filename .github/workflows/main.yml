@@ -24,7 +24,7 @@ jobs:
 
       # 第二步：安装和设置 cf 命令行工具
       - name: Setup CF CLI
-        uses: sap-actions/setup-cf@v2
+        uses: sap-actions/setup-cf@v4
 
       # 第三步：登录到 SAP BTP Cloud Foundry
       - name: Login to BTP
