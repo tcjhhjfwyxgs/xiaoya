@@ -1,0 +1,55 @@
+# GitHub Actions 工作流文件名
+name: Deploy tg-proxy to SAP BTP
+
+# 触发工作流的条件
+on:
+  # 允许你手动在 Actions 页面点击按钮来触发部署
+  workflow_dispatch:
+
+# 定义一些可以在下面重复使用的环境变量
+env:
+  BTP_APP_NAME: my-tg-proxy-docker  # BTP 上的应用名称，可以自定义
+  DOCKER_IMAGE: songnidedubai/tg-proxy # 要部署的 Docker 镜像
+
+# 定义具体的工作任务
+jobs:
+  deploy-to-btp:
+    # 使用最新的 Ubuntu 系统作为运行环境
+    runs-on: ubuntu-latest
+
+    steps:
+      # 第一步：检出仓库代码（即使是空的也要有这一步）
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 第二步：安装和设置 cf 命令行工具
+      - name: Setup CF CLI
+        uses: sap-actions/setup-cf@v2
+
+      # 第三步：登录到 SAP BTP Cloud Foundry
+      - name: Login to BTP
+        run: |
+          cf api "${{ secrets.BTP_API }}"
+          cf auth "${{ secrets.BTP_USER }}" "${{ secrets.BTP_PASS }}"
+          cf target -o "${{ secrets.BTP_ORG }}" -s "${{ secrets.BTP_SPACE }}"
+
+      # 第四步：部署 Docker 镜像
+      - name: Push Docker Image to BTP
+        run: |
+          cf push ${{ env.BTP_APP_NAME }} \
+            --docker-image ${{ env.DOCKER_IMAGE }} \
+            --docker-username "dummy" \
+            --random-route \
+            -m 128M \
+            --no-start
+
+      # 第五步：为应用设置环境变量（非常关键！）
+      - name: Set Environment Variables
+        run: |
+          cf set-env ${{ env.BTP_APP_NAME }} BOT_TOKEN "${{ secrets.TG_BOT_TOKEN }}"
+          cf set-env ${{ env.BTP_APP_NAME }} CHAT_ID "${{ secrets.TG_CHAT_ID }}"
+          cf set-env ${{ env.BTP_APP_NAME }} PROXY_SECRET "${{ secrets.TG_PROXY_SECRET }}"
+
+      # 第六步：启动应用
+      - name: Start Application
+        run: cf start ${{ env.BTP_APP_NAME }}
