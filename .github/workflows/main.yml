@@ -29,9 +29,9 @@ jobs:
           TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
         run: |
           python << 'EOF'
-          import requests, os, json
+          import requests, os, json, re
 
-          cookie = os.getenv("QUARK_COOKIE")
+          raw_cookie = os.getenv("QUARK_COOKIE", "")
           tg_token = os.getenv("TG_BOT_TOKEN")
           tg_chat_id = os.getenv("TG_CHAT_ID")
 
@@ -45,12 +45,23 @@ jobs:
                   "parse_mode": "HTML"
               })
 
-          if not cookie:
+          if not raw_cookie:
               tg_send("❌ <b>夸克签到失败</b>\n未设置 Cookie")
               raise Exception("QUARK_COOKIE not set")
 
+          # 自动清洗 Cookie
+          cookie = raw_cookie.replace("\r", "").replace("\n", "").strip()
+          cookie = re.sub(r"\s*;\s*", "; ", cookie)
+
+          if not cookie or "=" not in cookie:
+              raise Exception("Cookie 清洗后仍然无效")
+
           headers = {
-              "User-Agent": "Mozilla/5.0",
+              "User-Agent": (
+                  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/120.0.0.0 Safari/537.36"
+              ),
               "Cookie": cookie,
               "Referer": "https://pan.quark.cn/"
           }
@@ -87,9 +98,9 @@ jobs:
 
           except Exception as e:
               err = (
-                  "🚨 <b>夸克 Cookie 可能已失效</b>\n"
+                  "🚨 <b>夸克签到异常</b>\n"
                   f"❗ 原因：{e}\n\n"
-                  "👉 请重新获取 Cookie 并更新 GitHub Secrets"
+                  "👉 请检查 Cookie 是否仍然有效"
               )
               tg_send(err)
               raise
