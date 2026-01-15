@@ -1,0 +1,96 @@
+name: Quark Auto Signin
+
+on:
+  schedule:
+    - cron: "5 0 * * *"   # 北京时间 08:05
+  workflow_dispatch:
+
+jobs:
+  signin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests
+
+      - name: Quark Signin
+        env:
+          QUARK_COOKIE: ${{ secrets.QUARK_COOKIE }}
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHAT_ID }}
+        run: |
+          python << 'EOF'
+          import requests, os, json
+
+          cookie = os.getenv("QUARK_COOKIE")
+          tg_token = os.getenv("TG_BOT_TOKEN")
+          tg_chat_id = os.getenv("TG_CHAT_ID")
+
+          def tg_send(msg):
+              if not tg_token or not tg_chat_id:
+                  return
+              url = f"https://api.telegram.org/bot{tg_token}/sendMessage"
+              requests.post(url, data={
+                  "chat_id": tg_chat_id,
+                  "text": msg,
+                  "parse_mode": "HTML"
+              })
+
+          if not cookie:
+              tg_send("❌ <b>夸克签到失败</b>\n未设置 Cookie")
+              raise Exception("QUARK_COOKIE not set")
+
+          headers = {
+              "User-Agent": "Mozilla/5.0",
+              "Cookie": cookie,
+              "Referer": "https://pan.quark.cn/"
+          }
+
+          url = "https://drive-m.quark.cn/1/clouddrive/capacity/growth/info"
+
+          try:
+              r = requests.get(url, headers=headers, timeout=10)
+
+              if r.status_code != 200:
+                  raise Exception(f"HTTP {r.status_code}")
+
+              try:
+                  data = r.json()
+              except json.JSONDecodeError:
+                  raise Exception("返回非 JSON，Cookie 可能已失效")
+
+              if data.get("code") != 0 or not data.get("data"):
+                  raise Exception("接口返回异常，Cookie 可能已失效")
+
+              sign_status = data["data"].get("signStatus")
+              today_reward = data["data"].get("todayReward", {})
+
+              if sign_status == 1:
+                  msg = (
+                      "✅ <b>夸克网盘签到成功</b>\n"
+                      f"📦 今日奖励：{today_reward.get('capacity', 0)} MB"
+                  )
+              else:
+                  msg = "ℹ️ <b>夸克网盘今日已签到</b>"
+
+              tg_send(msg)
+              print(msg)
+
+          except Exception as e:
+              err = (
+                  "🚨 <b>夸克 Cookie 可能已失效</b>\n"
+                  f"❗ 原因：{e}\n\n"
+                  "👉 请重新获取 Cookie 并更新 GitHub Secrets"
+              )
+              tg_send(err)
+              raise
+          EOF
